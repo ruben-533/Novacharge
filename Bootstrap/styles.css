@@ -1,0 +1,72 @@
+/* custom.css — Estilos propios que Bootstrap NO trae por defecto.
+   A diferencia de Tailwind (donde todo se hace con clases en el HTML),
+   con Bootstrap normalmente necesitas un CSS aparte para tu marca. */
+
+:root {
+  --brand: #6d28d9;
+  --brand-dark: #4c1d95;
+  --brand-light: #a855f7;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-brand {
+  color: var(--brand) !important;
+}
+
+.bg-brand-soft {
+  background-color: #f3e8ff;
+}
+
+/* Bootstrap trae .btn-primary, .btn-secondary, etc, pero no un color de marca
+   personalizado — hay que definirlo nosotros a mano */
+.btn-brand {
+  background-color: var(--brand);
+  color: #fff;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-dark);
+  color: #fff;
+}
+
+.hero-section {
+  background: linear-gradient(180deg, #f5f0fe 0%, #ffffff 70%);
+}
+
+.hero-visual {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, var(--brand), #d8b4fe);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #f3e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.feature-card {
+  border: 1px solid #f1f1f1 !important;
+  border-radius: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.cta-banner {
+  background-color: #111827;
+}
